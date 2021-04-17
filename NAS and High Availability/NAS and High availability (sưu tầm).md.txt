@@ -1,0 +1,153 @@
+# 1.	NAS là gì?
+
+NAS là từ viết tắt của Network Attached Storage, dịch tạm tiếng Việt là thiết bị lưu trữ gắn vào mạng. Dịch thì nghe nghĩa của nó rất hẹp nhưng NAS làm được rất nhiều việc và công việc chính là tập trung hóa toàn bộ dữ liệu của người dùng cho dễ quản lý. Chúng ta cần phân biệt rõ NAS và DAS (direct attached storage) nhé, NAS thì không gắn trực tiếp vào máy tính như DAS mà nó sẽ kết nối vào mạng. NAS thường được sử dụng để lưu trữ, chia sẻ file và đặc biệt là streaming các dữ liệu đa phương tiện trong thời gian gần đây. Với các hệ thống NAS thì bạn có đi ra khỏi nhà, văn phòng vẫn truy cập được dữ liệu ở nhà một cách dễ dàng.
+
+Các hệ thống NAS hiện đại cũng có thể hình dung như 1 máy chủ thu nhỏ bởi nó cũng có CPU, cũng có RAM và chạy những phiên bản hệ điều hành nhúng thu gọn (thường là Linux) cũng như có khả năng kết nối mạng qua cổng Ethernet hay thậm chí là kết nối không dây như Wi-Fi. Để lưu trữ dữ liệu thì NAS thường dùng ỗ gắn trong tuy nhiên một số thiết bị còn hỗ trợ kết nối với thiết bị gắn ngoài hay thậm chí là USB nhớ. Thị trường NAS hiện nay khá là đông đúc và bạn có thể lựa chọn bất cứ thứ gì mình thích, những NAS chỉ hỗ trợ ổ lưu trữ gắn ngoài thông qua USB thường nhỏ và rẻ hơn rất nhiều so với các NAS sử dụng ổ cứng gắn trong. Một số NAS nâng cao khác lại hỗ trợ những tính năng như thiết lập máy chủ web, quản trị từ xa hay các thiết lập ổ cứng theo chế độ RAID.
+
+
+Thị trường NAS hiện nay thường chia làm 3 hạng mục chính. Đầu tiên là các NAS cho khách hàng cá nhân thường chỉ hỗ trợ các cổng USB và gắn ổ cứng chết. Tiếp đến là các NAS nâng cao hơn một chút, chẳng hạn như hỗ trợ các giao tiếp iSCSI cho văn phòng nhỏ và người dùng cao cấp. Cuối cùng, ta có các NAS xịn nhất hỗ trợ các giao thức RAID, Active Directory, Web Server, Firewall,...
+
+
+Sau đây, chúng ta hãy cùng tìm hiểu các tiêu chí khi mua NAS:
+
+
+#### Dung lượng NAS
+
+ - Dung lượng mà 1 ổ lưu trữ NAS hỗ trợ thường ảnh hưởng rất nhiều đến giá của nó. Các ở NAS cho khách hàng cá nhân thường ít hỗ trợ ổ SATA gắn trong mà dùng ổ cứng gắn ngoài thông qua cổng USB. Một số NAS loại này có tới 4 cổng USB hỗ trợ các ổ cứng tới dung lượng cả TB. Điều thiếu sót ở các ổ này thường lại không hỗ trợ các phương thức bảo vệ dữ liệu như RAID 1 hay tăng tốc như RAID 0. Ngoài ra, trong khi các hệ thống NAS ổ cứng gắn trong hỗ trợ rất nhiều phương thức quản lý khác nhau và gần như không bị giới hạn dung lượng lưu trữ của 1 ổ cứng (tối đa 3TB/1 ổ hiện tại) thì nhiều NAS gắn ngoài USB bị giới hạn vài trăm GB hay thấp hơn trên 1 cổng. Do vậy mà bạn phải tìm hiểu rõ với nhà sản xuất trước khi mua.
+
+- Thông thường các ổ NAS đi kèm sẵn ổ cứng bên trong sẽ rẻ hơn là mua riêng. Tuy vậy, vẫn có những trường hợp ngược lại và khi này bạn hãy mua loại không ổ (disk less) và tự lắp các ổ rời vào. Việc lắp đặt thường rất đơn giản nhưng bạn hãy lưu ý loại ổ cứng được NAS hỗ trợ nhé. Không phải ổ cứng nào cũng hỗ trợ sử dụng với NAS đâu, danh sách ổ cứng tương thích thường được đặt trên website của nhà sản xuất đó. 
+- Với các ổ cứng doanh nghiệp thì không cần phải nói đến khả năng mở rộng của chúng. Ví dụ ổ QNAP TS-212 chỉ có 1 cổng USB cho mở rộng nhưng lại hỗ trợ iSCSI để tạo các đĩa ảo nhằm nâng cao dung lượng.
+
+#### NAS không dây hay có dây?
+
+ Hầu hết các NAS mới trên thị trường đều hỗ trợ Gigibit Ethernet thay cho mạng 100Mbps chậm chạp trước kia. Một số NAS thậm chí còn hỗ trợ tới 2 cổng Ethernet cho Port Trunking, tính năng này sẽ dự phòng 1 cổng hỏng và ngay lập tức thay bằng cổng kia nhằm bảo đảm khả năng kết nối, ngoài ra nó cũng kết hợp 2 đường Ethernet của NAS nằm tăng tốc độ truyền tải dữ liệu. Bạn có thể kết nối NAS với router hay switch để nối nó với mạng đang sử dụng. Rất nhiều NAS có sẵn DHCP và sẽ tự động nhận địa chỉ IP từ mạng. Nếu muốn quản lý từ xa thì bạn nên gán cho nó một địa chỉ IP tĩnh. 
+
+ Các thiết bị lưu NAS hỗ trợ không dây sẵn thì hiếm hơn loại có dây khá nhiều và chúng cũng gặp 1 số vấn đề như độ trễ thường lớn hơn các loại dùng dây. Dù vậy thì ngày càng nhiều NAS được ra mắt với WiFi tích hợp sẵn chuẩn N hoặc các lựa chọn cho phép gắn USB WiFi vào. Bất lợi của việc sử dụng WiFi là tốc độ của nó khá chậm, nhanh như WiFi n mới nhất 450Mbps cũng chưa bằng 1 nửa so với Gigabit Ethernet. Trừ trường hợp bạn muốn stream video qua WiFi hay download/upload liên tục thì không nên bỏ tiền vào các tùy chọn này, hãy dùng chúng nâng cấp ổ cứng hoặc router. 
+
+#### Sức mạnh xử lý
+Cũng giống như máy tính, các thiết bị NAS cũng có bộ nhớ RAM và vi xử lý của riêng mình. Và tất nhiên, bộ xử lý càng nhanh, RAM càng nhiều thì NAS đó có hiệu năng càng cao. Bạn đừng lầm tưởng bộ xử lý cho NAS cũng đòi hỏi phải như máy vi tính nhé, những NAS cao cấp nhất hiện tại sử dụng những chú ATOM 2 nhân như D510 mà thôi. Nếu nhu cầu của bạn càng cao, thực hiện các thao tác hoạt động I/O liên tục thì nên đầu tư vào những bộ NAS dùng chip ATOM, các NAS rẻ hơn thường dùng chip Marvell. Vài NAS cho phép ta nâng cấp RAM nhưng hầu hết đều gắn chết vào mainboard.
+
+Hệ điều hành
+Nếu bạn dùng Windows thì không phải lo lắng nhiều về điều này, hầu hết các hệ thống NAS đều hỗ trợ Windows đầy đủ. Người dùng Mac cũng không phải lo lắng quá nhiều, một số NAS hỗ trợ hệ thống sao lưu định kỳ Time Machine của Mac OSX. Những bạn dùng Linux thì nên sử dụng những bản Linux phổ biến, dù sao thì không phải NAS nào cũng hỗ trợ Linux.
+
+Hệ thống sao lưu và phục hồi của NAS
+ - NAS chỉ có giá trị chừng nào nó còn lưu giữ được dữ liệu của bạn. Các NAS cao cấp thường có những tùy chọn thiết lập RAID hay các hệ thống cảnh báo hỏng hóc ổ cứng và những vấn đề nghiêm trọng. 
+
+ - Việc phục hồi dữ liệu trong những trường hợp xảy ra hỏng hóc cũng là một vấn đề cần được quan tâm. Những NAS cho doanh nghiệp thường hỗ trợ tính năng trao đổi đĩa cứng nóng (hot-swap), cho phép thay đổi đĩa cứng mà không phải ngắt nguồn hay ảnh hưởng đến hiệu năng hoạt động của ổ. Một số NAS còn hỗ trợ sao lưu dữ liệu trong ổ cứng lên máy chủ đám mây, một giải pháp cực kỳ an toàn khi dữ liệu của bạn được lưu trữ ở 2 khu vực hoàn toàn tách biệt. Nhà sản xuất thường dùng thuật ngữ hybrid cho giải pháp này và nó được áp dụng với những dữ liệu cực kỳ quan trọng. Nếu không dùng mày chủ của nhà sản xuất thì các NAS cho khách hàng cá nhân cũng có thể hỗ trợ các dịch vụ sao lưu đám mây khác. 
+
+ - Không chỉ dữ liệu mà cấu hình của NAS cũng cần được lưu lại, có lẽ bạn không muốn cứ phải thiết lập đi thiết lập lại mỗi NAS riêng lẻ trong hệ thống của mình đâu phải không? Một số NAS còn cho phép người dùng cắm ổ cứng vào cổng USB rồi sao lưu ra đó 
+
+Tiếng ồn
+- Có nhiều hệ thống NAS rất ồn ào, cực kỳ ồn ào khi mà 4 ổ cứng quay cùng lúc, quạt tản nhiệt cũng chạy vù vù. Do vậy, bạn nên thử nghiệm trước khi mua NAS vì có thể bị khó chịu với nó đấy. Tiếng ồn không phải là một vấn đề lớn ở các doanh nghiệp có khu vực để máy chủ riêng nhưng hẳn sẽ gây khó chịu cho khách hàng cá nhân.
+Mức tiêu thụ điện
+
+NAS được tạo ra để tiết kiệm điện so với những hệ thống máy chủ mạng. Tuy nhiên, bạn cũng nên lưu ý các giải pháp mà nhà sản xuất cung cấp có đầy đủ không, có NAS cho phép quản lý quạt, điện năng tiêu thụ hay chỉ chạy quạt khi nhiệt độ đạt đến ngưỡng nào đó. Các NAS doanh nghiệp thậm chí còn có thể kiểm soát cả dòng điện của CPU...
+
+Điều khiển từ xa
+Càng ngày càng có nhiều NAS hỗ trợ quản lý từ xa, chẳng hạn như các dịch vụ trên nền đám mây hay quản lý thông qua giao diện web. Tích hợp vói các dịch vụ nền đám mây là một tính năng rất quan trọng nếu bạn muốn chia sẻ dễ liệu dễ dàng hơn với bạn bè và người thân.
+ 
+ 
+Phần mềm và dịch vụ NAS
+Mặc dù các phần mềm đi kèm NAS chủ yếu tập trung vào việc streaming file đa phương tiện và sao lưu hệ thống nhưng có một số nhà sản xuất khá nhanh nhạy khi hỗ trợ máy chủ FTP, tải BitTorrent, máy chủ iTunes hay thậm chí là Telnet. Một số khác cao cấp hơn còn có cả MySQL, Web quản lý camera IP. 
+
+Bảo mật cho NAS
+Bảo mật luôn là một vấn đề cần cân nhắc, dù cho bạn dùng NAS ở nhà hay công ty. Bạn nên chọn NAS nào hỗ trợ mã hóa file hay thậm chí là bảo vệ bằng tường lửa. Các NAS doanh nghệp cũng hỗ trợ các phương thức bảo vệ vật lý khác như lỗ khóa Kensingto hay K-Slots.
+
+
+
+
+
+##High Availability
+High availability có nghĩa “Độ sẵn sàng cao”. Tức là những máy chủ hoặc thiết bị luôn trong tình trạng sẵn sàng phục vụ, giảm thiểu khả năng gián đoạn của hệ thống. Hoặc có thể hiểu đơn giản High availability là một giải pháp hoặc quy trình hay công nghệ nhằm thực hiện chức năng đảm bảo cho ứng dụng, cơ sở dữ liệu có thể truy cập được 24/7 trong mọi điều kiện.
+Để có thể thực hiện được điều này, cơ chế cần tối thiểu 2 máy chủ cùng chạy song song và hoạt động liên tục. Nếu xảy ra tình huống một máy chủ gặp sự cố thì máy còn lại sẽ thay thế nhằm giúp hệ thống vẫn tiếp tục hoạt động bình thường. 
+GIẢI PHÁP SYNOLOGY HIGH AVAILABILITY (SHA) - GIẢI PHÁP TRIỂN KHAI 02 MÁY CHỦ NAS SYNOLOGY CHẠY SONG SONG
+Giới thiệu
+Khả năng hoạt động liên tục là một mục tiêu quan trọng đối với tất cả doanh nghiệp, tuy nhiên có đến 50% các doanh nghiệp SMB trên toàn thế giới vẫn chưa có giải pháp chuẩn bị để khắc phục cho thảm hoạ mất dữ liệu.
+Chính vì vậy, giải pháp Synology High Availability (SHA) sẽ giúp doanh nghiệp vượt qua những khó khăn kể trên bằng cách đảm bảo cho một hệ thống dịch vụ lưu trữ hoạt động liên tục với việc tối ưu hoá tính sẵn sàng của hệt thống, giảm tối thiểu nguy cơ gián đoạn và thời gian chết do ngừng hệ thống.
+
+Giới thiệu giải pháp High Availability Clustering
+2.1 Synology High-Availability Cluster (Cụm máy chủ có tính sẵn sàng cao)
+Synology High-Availability Cluster là giải pháp bố trí các máy chủ được thiết kế để giảm thiểu sự gián đoạn dịch vụ do trục trặc hệ thống. Giải pháp sử dụng nhiều máy chủ để tạo thành một "High Availability Cluster" (cụm máy chủ có tính sẵn sàng cao) bao gồm 02 máy chủ Synology, trong đó một máy chủ được cấu hình để hoạt động như một thiết bị chính (active), và máy chủ còn lại được cấu hình như một máy chủ hoạt động chờ (passive).
+
+2.2 Service Continuity (Dịch vụ liên tục)
+Khi một 'Cụm máy chủ có tính sẵn sàng cao' (high availability cluster) được hình thành, dữ liệu sẽ liên tục được sao chép từ máy chủ active sang máy chủ passive. Tất cả các tập tin trên máy chủ active sẽ được tạo ra trên máy chủ passive. Trong trường hợp có sự cố nghiêm trọng, máy chủ passive sẽ ngay lập tức sẵn sàng để  tiếp nhận tất cả các dịch vụ, và tất cả các dữ liệu trên máy chủ active đã được ánh xạ qua máy chủ passive, nhờ đó đảm bảo tính sẵn sàng cao, và máy chủ passive sẽ tiếp nhận vai trò của máy chủ active để tiếp tục hoạt động bình thường, làm giảm thời gian chết.
+
+2.3 Data Replication Process (Quá trình sao chép dữ liệu)
+Trong 'Cụm máy chủ có tính sẵn sàng cao' (high availability cluster), tất cả dữ liệu được lưu trong các ổ đĩa nội bộ (internal drives) hoặc trên các đơn vị mở rộng (expansion units) sẽ được sao chép. Do đó, khi tất cả các dịch vụ được chuyển từ máy chủ active sang máy chủ passive, sẽ không có tình huống mất dữ liệu xảy ra.
+Trong khi việc sao chép dữ liệu là một quá trình diễn ra liên tục, nó có hai giai đoạn riêng biệt kéo dài từ lúc hình thành đến lúc hoạt động của 'Cụm máy chủ có tính sẵn sàng cao' (high availability cluster):
+
+Giai đoạn 1: Việc sao chép ban đầu trong quá trình khởi tạo cụm máy chủ (cluster creation) hoặc  việc sao chép các dữ liệu khác biệt khi kết nối đến máy chủ passive hoạt động trở lại sau khi bị ngắt kết nối (chẳng hạn như nguyên nhân do máy chủ active bị tắt hoặc bảo trì). Trong giai đoạn này, việc đồng bộ ban đầu chưa thực sự hoàn tất, và do đó việc chuyển đổi tự động (switchover) không thể được thực hiện.
+Giai đoạn 2: Việc sao chép dữ liệu theo thời gian thực sau khi quá trình đồng bộ ban đầu đã hoàn tất. Sau quá trình đồng bộ ban đầu, tất cả dữ liệu sẽ được sao chép theo thời gian thực và sẽ được xứ lý như cam kết nếu sao chép thành công. Trong giai đoạn này, việc chuyển đổi tự động (switchover) có thể được thực hiện bất cứ lúc nào.
+Khi bước vào giai đoạn 2 của việc sao chép dữ liệu, tất cả dữ liệu đồng bộ được thực hiện ở cấp độ khối (block-level). Ví dụ, khi ghi một tập tin 10GB, quá trình đồng bộ sẽ được chia nhỏ thành từng khối, và hoàn thành việc đồng bộ từng phần để đảm bảo rằng máy chủ active và passive đều chứa lượng dữ liệu giống hệt nhau. Như vậy, tất cả dữ liệu được đảm bảo duy trì việc cập nhật liên tục, và việc chuyển đổi vai trò máy chủ có thể thực hiện bất cứ lúc nào.
+Các dữ liệu sẽ được sao chép, bao gồm:
+>	Dịch vụ dữ liệu trên NAS: Tất cả các dịch vụ tập tin bao gồm CIFS/NFS/AFP
+>	Dịch vụ dữ liệu iSCSI: SHA hỗ trợ iSCSI, bao gồm dịch vụ iSCSI LUN và iSCSI Target
+>	DSM và các dịch vụ khác: Các ứng dụng quản lý, bao gồm cả Synology’s DiskStation Manager (DSM) và các dịch vụ khác của nó và các gói ứng dụng như Mail Server, Directory Server, ... bao gồm tất cả các cấu hình và tình trạng các dịch vụ.
+Kiến trúc của Cum máy chủ có tính sẵn sàng cao (High Availability Clustering)
+
+
+3.1 Thành phần vật lý (Physical Components)
+Giải pháp SHA xây dựng một cụm máy chủ bao gồm hai hệ thống lưu trữ độc lập, bao gồm một máy chủ active và một máy chủ passive. Mỗi máy chủ có một volume lưu trữ độc lập, nhưng cả hai máy chủ được liên kết bởi một cơ chế kết nối đặc biệt gọi là 'Heartbeat', cơ chế này sẽ theo dõi tình trạng của máy chủ và sao chép dữ liệu liên tục giữa 2 máy chủ.
+
+
+•	Máy chủ Active: trong điều kiện bình thường, tất cả các dịch vụ sẽ được cung cấp bởi máy chủ active. Khi có sự cố nghiêm trọng, máy chủ active sẽ sẵn sàng để chuyển các dịch vụ sang cho máy chủ passive đảm nhận, do đó làm giảm thời gian chết.
+•	Máy chủ Passive: trong điều kiện bình thường, máy chủ passive vẫn hoạt động ở chế độ chờ và nhận một luồng dữ liệu ổn định được sao chép từ máy chủ active sang.
+•	Cơ chế kết nối Heartbeat: Máy chủ active và passive trong giải pháp SHA được liên kết bởi một kết nối mạng riêng chuyên dụng gọi là 'Heartbeat'. Khi cụm máy chủ được hình thành, kết nối 'Heartbeat' sẽ tạo điều kiện cho dữ liệu được đồng bộ hoá. Nó cũng cho phép máy chủ passive liên tục phát hiện sự hiện diện của máy chủ active nhằm cho phép máy chủ passive tiếp nhận ngay vai trò của máy chủ passive trong trường hợp máy chủ active bị lỗi. Kết nối 'Heartbeat' ngoài ra cũng được dùng để sao chép dữ liệu từ máy chủ active sang máy chủ passive.
+•	Ghi chú: Kết nối Heartbeat nên được cấu hình trên môi trường mạng có tốc độ nhanh nhất giữa hai máy chủ. Ví dụ, nếu các máy chủ được trang bị các card mạng 10GbE, kết nối Heartbeat nên được cấu hình sử dụng tốc độ 10GbE.
+•	Không gian lưu trữ chính (Main Storage): chính là volume lưu trữ trên máy chủ active
+•	Không gian lưu trữ thay thế (Spare Storage): chính là volume lưu trữ trên máy chủ passive, nơi chứa các dữ liệu liên tục được sao chép về từ máy chủ active
+3.2 Kết nối ảo (Virtual Interface)
+Kết nối ảo cho phép các máy chủ trong môi trường mạng có thể kết nối tới không gian lưu trữ của SHA với một tên thống nhất và ngăn ngừa việc phải thay đổi cấu hình mạng khi có sự chuyển đổi từ máy chủ active sang máy chủ passive trong trường hợp nó được kích hoạt. Khi cụm máy chủ này được hình thành, các hosts và các clients sẽ phải dùng kết nối ảo của nó để truy cập vào không gian lưu trữ của SHA. Khi đó kết nối ảo này sẽ có địa chỉ IP và tên riêng để sẵn sàng cho việc truy cập.
+•	Cluster Server Name and IPs: Các máy chủ trên cụm máy chủ sẽ chia sẻ một địa chỉ IP và tên gọi riêng, theo đó các thiết bị khác có thể truy cập đến tài nguyên của nó thông qua các thông tin này.
+3.3 Cấu hình Network
+Do kết nối ảo của cụm máy chủ được map trên máy chủ active, kết nối mạng vật lý giữa máy chủ active và máy chủ passive đến dữ liệu mạng phải được cấu hình sao cho tất cả các hosts và clients có thể truy cập vào cả hai máy chủ. Hình ảnh bên dưới minh hoạ một ví dụ cơ bản, theo đó tất cả các máy chủ khác trong mạng có thể kết nối với cụm máy chủ. Trong trường hợp xảy ra sự cố và có sự chuyển đổi vai trò, các dữ liệu vẫn được truy cập bình thường.
+Đảm bảo tính liên tục của dịch vụ
+4.1 Cơ chế chuyển đổi
+Để đảm bảo tính sẵn sàng cao, các dịch vụ phải có thể được chuyển đổi từ máy chủ active sang máy chủ passive trong điều kiện hoạt động bình thường của cụm máy chủ vào bất cứ lúc nào. Cơ chế chuyển đổi (switchover) có thể được kích hoạt bằng tay trong trường hợp cần bảo trì hệ thống, hoặc kích hoạt một cách tự động trong trường hợp máy chủ active có sự cố, lúc này được gọi là chuyển đổi dự phòng (failover). Sau khi vai trò các máy chủ được trao đổi, máy chủ active sẽ tiếp tục đảm nhận lại vai trò của máy chủ passive và hoạt động ở chế độ chờ. Tài nguyên bên trong của cụm máy chủ được truy cập thông qua một kết nối ảo duy nhất, nhờ đó việc chuyển đổi sẽ không làm ảnh hưởng đến các máy chủ khác khi đang truy cập.
+•	Switchover: máy chủ active và máy chủ passive có thể được kích hoạt việc chuyển đổi vai trò bằng tay mà không làm gián đoạn dịch vụ, để phục vụ cho mục đích bảo trì máy chủ.
+•	Failover: trong trường hợp có sự cố nghiêm trọng, cụm máy chủ sẽ tự động kích hoạt việc chuyển đổi dự phòng để duy trì các dịch vụ hoạt động liên tục.
+Các trường hợp sau đây có thể được kích hoạt việc chuyển đổi dự phòng:
+•	Crashed RAID Group (Nhóm RAID bị hỏng): nếu một RAID Group trên máy chủ active bị hỏng (crashed) trong khi RAID Group trên máy chủ passive là bình thường, chế độ chuyển đổi dự phòng sẽ được kích hoạt trừ khi không có volumes hoặc iSCSI LUNs (block-level) trên RAID Group bị hỏng. Thời gian quan sát giữa 02 máy chủ là mỗi 30 giây. Do đó, trong trường hợp tồi tệ nhất, việc chuyển đổi sẽ được kích hoạt trong 30 giây sau sự cố.
+•	Service Error (Lỗi dịch vụ): nếu có lỗi xảy ra trong quá trình theo dõi của dịch vụ SHA, việc chuyển đổi dự phòng cũng được kích hoạt. Các dịch vụ có thể được qua sát, theo dõi bao gồm:  CIFS, NFS, AFP, FTP, và iSCSI. Dịch vụ theo dõi sẽ thực hiện mỗi 30 giây. Do đó, trong trường hợp tồi tệ nhất, việc chuyển đổi sẽ được kích hoạt trong 30 giây sau sự cố.
+•	Power Interruption (Sự cố mất nguồn): nếu máy chủ active bị tắt hoặc khởi động lại, cả 02 bộ nguồn trên máy chủ active đều bị sự cố, hoặc sự cố mất điện, việc chuyển đổi dự phòng sẽ tự động được kích hoạt. Thời gian theo dõi, giám sát là mỗi 15 giây. Do đó, trong trường hợp tồi tệ nhất, việc chuyển đổi sẽ được kích hoạt trong 15 giây sau sự cố.
+•	Heartbeat and Data Connection Lost (Kết nối Heartbeat và kết nối dữ liệu bị mất): nếu máy chủ passive không thể tìm thấy, phát hiện sự hiện diện của máy chủ active từ cả kết nối Heartbeat và kết nối dữ liệu, việc chuyển đổi dự phòng cũng sẽ được kích hoạt tự động. Thời gian theo dõi, giám sát là mỗi 15 giây. Do đó, trong trường hợp tồi tệ nhất, việc chuyển đổi sẽ được kích hoạt trong 15 giây sau sự cố.
+Sau khi chuyển đổi thành công, máy chủ bị lỗi có thể cần phải được thay thế hoặc sửa chữa. Nếu máy chủ bị lỗi đã được sửa chữa, sau khi khởi động lại máy chủ, hệ thống cụm máy chủ SHA sẽ trở lại bình thường và việc đồng bộ dữ liệu sẽ tiếp tục diễn ra như cơ chế đã định. Nếu máy chủ bị lỗi được thay mới hoàn toàn, thì sẽ cần phải cấu hình lại cụm máy chủ để tái tạo lại chức năng như ban đầu của nó. Bất kì một thiết bị USB/eSATA gắn trên máy chủ active sẽ cần phải được gắn lại bằng tay trên máy chủ passive một khi quá trình chuyển đổi đã hoàn tất.
+Ghi chú: Khi việc chuyển đổi diễn ra, tất cả các phiên làm việc trên dữ liệu sẽ bị ngắt, do đó việc mất một số dữ liệu đang làm việc tại thời điểm đó có thể xảy ra.
+4.2 Thời gian hoàn thành việc chuyển đổi
+Khi việc chuyển đổi được kích hoạt, máy chủ active sẽ đổi vai trò thành máy chủ passive, sau đó máy chủ passive sẽ được chuyển thành máy chủ active. Trong suốt quá trình chuyển đổi, sẽ có một khoảng thời gian ngắn, cả hai máy chủ active và passive tạm dừng cung cấp các dịch vụ. Thời gian này mất bao lâu tuỳ thuộc vào số lượng và dung lượng các volumes hoặc iSCSI LUNs (block-level), và tổng số lượng dịch vụ đang chạy trên cụm máy chủ.
+Bảng dưới đây sẽ cung cấp cho bạn thời gian ước tính để hoàn thành việc chuyển đổi:
+Chuyển đổi thất bại
+Việc chuyển đổi có thể thất bại vì các lý do sau:
+•	Việc sao chép dữ liệu chưa hoàn tất (Incomplete Data Replication): khi các máy chủ ban đầu được kết hợp để tạo thành một cụm máy chủ SHA, cần có một khoảng thời gian để hai máy chủ hoàn tất việc đồng bộ dữ liệu với nhau. Do vậy, khi quá trình này vẫn còn chưa hoàn tất, việc chuyển đổi có thể thất bại.
+•	RAID Group trên máy chủ passive bị hỏng (Passive Server RAID Group Crash): việc chuyển đổi có thể thất bại nếu RAID Group trên máy chủ passive bị hỏng.
+•	Gián đoạn năng lượng (Power Interruption): việc chuyển đổi có thể thất bại nếu máy chủ passive  bị tắt hoặc bị khởi động lại, nếu 2 bộ nguồn trên mày chủ passive bị hỏng, hoặc mất nguồn vì bất cứ lsy do gì.
+•	Ghi chú: nếu trong trường hợp việc kích hoạt bằng tay thất bại, hệ thống sẽ tự động chuyển đổi vai trò lại như ban đầu.
+Yêu cần cho việc triển khai
+Để triển khai giải pháp này, cần 02 máy chủ NAS Synology giống nhau và có hỗ trợ gói ứng dụng SHA. Trước khi hai máy chủ được kết hợp để tạo thành một cụm máy chủ có tính sẵn sàng cao, trình điều khiển SHA sẽ kiểm tra những điều kiện này trước khi cho phép thực hiện bước tiếp theo.
+Yêu cầu hệ thống và các giới hạn
+•	Máy chủ Synology: cả hai máy chủ active và passive phải cùng một model và được xác nhận rằng có hỗ trợ chức năng SHA.
+•	Phiên bản DSM: 02 máy chủ active và passive phải cài cùng một phiên bản DSM
+•	Phiên bản gói ứng dụng: gói SHA cùng phiên bản phải được cài trên cả 02 máy chủ.
+•	Lưu ý: chức năng SSH sẽ tự động được bật khi SHA được hình thành.
+•	
+5.1 Yêu cầu và Giới hạn: Volume và ổ đĩa cứng
+•	Storage Volume: để hỗ trợ việc sao chép đồng bộ dữ liệu, dung lượng lưu trữ trên máy chủ passive phải bằng hoặc lớn hơn dung lượng lưu trữ trên máy chủ active. Tốt nhất là 02 kích cỡ dung lưuợng trên 02 máy chủ nên giống nhau hoàn toàn.
+•	Số lượng ổ đĩa cứng: cả 02 máy chủ active và passive phải có cùng số lượng ổ đĩa cứng, ngoài ra   vị trí và số thứ tự ổ cứng cũng phải tương ứng giống nhau.
+•	Synology Hybrid Raid (SHR): trong SHA, chế độ SHR không được hỗ trợ.
+•	
+5.2 Yêu cầu và Giới hạn: môi trường mạng
+•	Cấu hình mạng: 02 máy chủ phải có địa chỉ IP tĩnh trong cùng subnet
+•	Cổng LAN: 02 máy chủ phải có cùng số lượng cổng mạng, bao gồm cả những card mạng rời
+•	Ghi chú: PPoE, link aggregation, Wi-Fi, và VLAN không được hỗ trợ. Bạn nên tắt các chức năng này trước khi thiết lập một SHA.
+5.3 Giới hạn: Quản lý dung lượng lưu trữ
+Một khi cụm máy chủ được hình thành, chức năng Storage Manager sẽ không thể thực hiện được các nhiệm vụ: chỉnh sửa, mở rông kích thước volume và iSCSI LUN (block-level), Thay đổi loại RAID
+Các chức năng sau sẽ vẫn được duy trì sau khi hình thành cụm máy chủ SHA:
+•	Mở rộng RAID Group bằng cách thêm hoặc thay thế ổ đĩa cứng.
+•	Tạo, xoá, hoặc sửa chữa volume và iSCSC LUN.
+•	Thay đổi kích thước và vị trí iSCSI LUN (file-level)
+•	Thay đổi iSCSI LUN Target
+5.4 Yêu cầu về đơn vị mở rộng dung lượng
+Các đơn vị mở rộng có thể được gắn thêm vào một khi cụm máy chủ SHA đã hình thành cho mục đích mở rộng dung lượng lưu trữ. Tuy nhiên, cũng như yêu cầu đối với các phần cứng khác, các đơn vị mở rộng gắn trên 02 máy chủ active và passive phải giống nhau hoàn toàn.     
+
+
+
