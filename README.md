@@ -45,7 +45,7 @@ ____________
 
 **Example**
 
-<img src =https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw)
+<img src =https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw>
 
 <img src = https://lh3.googleusercontent.com/7P-sDxJCbDsnPG2ntwtmAWxnkC60VYUOSndp33EV2y_5WAKw-ONJcrwBGlZT0nnyNsT7NuIyAfcx36A_=w908-h330-rw>
 ### Example code:
