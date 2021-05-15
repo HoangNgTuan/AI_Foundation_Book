@@ -1,5 +1,5 @@
 
-##This part will introduce about Staistics and Applications
+## This part will introduce about Statistics and Applications
 ![Build](https://github.com/ntkme/github-buttons/workflows/build/badge.svg)
 ![Python Versions](https://img.shields.io/badge/python-v3.8-blue)
 
