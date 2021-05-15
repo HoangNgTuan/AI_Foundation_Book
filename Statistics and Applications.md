@@ -1,5 +1,5 @@
 
-##This part will introduce about Staistics and Applications
+## This part will introduce about Statistics and Applications
 ![Build](https://github.com/ntkme/github-buttons/workflows/build/badge.svg)
 ![Python Versions](https://img.shields.io/badge/python-v3.8-blue)
 
@@ -45,10 +45,11 @@ ____________
 
 **Example**
 
-![](https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw)
+<img src = 'https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw'>
 
-![](https://lh3.googleusercontent.com/7P-sDxJCbDsnPG2ntwtmAWxnkC60VYUOSndp33EV2y_5WAKw-ONJcrwBGlZT0nnyNsT7NuIyAfcx36A_=w908-h330-rw)
-### Example code:
+<img src = 'https://lh3.googleusercontent.com/7P-sDxJCbDsnPG2ntwtmAWxnkC60VYUOSndp33EV2y_5WAKw-ONJcrwBGlZT0nnyNsT7NuIyAfcx36A_=w908-h330-rw'>  
+
+### Example code:     
 ```python
 def calculate_mean(numbers):    #1
     s = sum(numbers)            #2
@@ -62,7 +63,9 @@ donations = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]
 mean_value = calculate_mean(donations)
 print('Trung bình số tiền quyên góp là: ', mean_value)
 ```
-> Trung bình số tiền quyên góp là:  477.75
+  
+
+Trung bình số tiền quyên góp là:  477.75  
 
 
 
@@ -120,19 +123,19 @@ kernel = np.ones((5,5), np.float32) / 25.0
 dst = cv2.filter2D(image, cv2.CV_8U, kernel)
 
 #show images
-cv2.imshow('image', image)
-cv2.imshow('dst', dst)
+cv2.imshow(image)
+cv2.imshow(dst)
 
 # waiting for any keys pressed and close windows
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-<img src = https://srome.github.io/images/heatblur/output_5_1.png)>
+<img src = https://srome.github.io/images/heatblur/output_5_1.png>
 
 
 
 Để hiểu rõ hơn hãy nhìn gif dưới đây
-(Convolution gif)
+(Convolution gif)  
 ![](https://topdev.vn/blog/wp-content/uploads/2019/08/Convolution_schematic.gif)
 
 
@@ -152,12 +155,12 @@ image = cv2.imread('beauty.jpg', 0)
 kernel = np.ones((5,5), np.float32) / 25.0
 
 # Select ROI (top_y, top_x, height, width)
-roi = image[40:140, 150:280]
+roi = image[185:740, 170:570]
 
 # compute mean for each pixel
 roi = cv2.filter2D(roi, cv2.CV_8U, kernel)
 
-image[40:140, 150:280] = roi
+image[185:740, 170:570] = roi
 
 # Show image
 cv2.imshow('roi', roi)
@@ -167,8 +170,8 @@ cv2.imshow('image', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-<img src = https://i.pinimg.com/originals/84/12/71/8412715b792dc8e26f384ce8d26e8304.jpg alt ='original_face' height = 250 width = 188>
-<img src = https://lh3.googleusercontent.com/lliBxDa9-Fge2jlimlnahroHuBlAb9qGlrFyOALT2ls-P2mRTy6tlncV0aHY213YYIQDx8olPLt_Vm3e=w242-h330-rw alt = 'blur_face' heigt = 220 width = 188>
+<img src = 'https://lh3.googleusercontent.com/J5MS8lvlZE7jg7RcbXVPH0ZGHNVHh-wYIoWVyx7fWK65LWfkJug3F-ZMCBnRdCv48OABdWpd4wbRSYdD=w257-h330-rw'   height = 125 width = 94> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src = "https://lh3.googleusercontent.com/5ZrItsIhPSJ3SeQBADmrY4IhQpCbYXvXfaoKGVEQEr0_Y980kxz1tx5zSA4tqG7aHOxB8S8qyKK0RiYl=w252-h330-rw" alt = 'imshow' >  
+&nbsp; &nbsp; &nbsp; &nbsp; *roi* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; *image* 
 
 ```python
 # load image and blurring using face detection
@@ -177,10 +180,13 @@ import numpy as np
 import cv2
 
 # face detection setup
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascade + 'haarcascade_frontalface_default.xml')
 
 # load image in grayscale mode
-image = cv2.imread('confused.jpg')
+image = cv2.imread('beauty.jpg')
+
+#show image with default format
+cv2.imshow(image)
 
 # Convert to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -209,9 +215,14 @@ cv2.imshow('image', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-<img src = https://www10.lunapic.com/editor/working/162100434264841959?5898521098 alt = 'detect_Face' height = 250 width = 250>
 
-<img src = https://www2.lunapic.com/editor/working/162104673826449510?2983037628 alt ='blur' height = 250 width = 250>
+<img src = "https://lh3.googleusercontent.com/5ZrItsIhPSJ3SeQBADmrY4IhQpCbYXvXfaoKGVEQEr0_Y980kxz1tx5zSA4tqG7aHOxB8S8qyKK0RiYl=w252-h330-rw" alt = 'imshow' > 
+ 
+
+<img src = 'https://lh3.googleusercontent.com/dLR11iJBghn65Mgf1IwDhxsbaEqTvBhS2a7zkxTI8FLU2kBhwUFZnmNV_WYpdNbL40ntK-rdMdbJnaxi=w332-h330-rw' alt = 'roi' height = 100> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<img src = 'https://lh3.googleusercontent.com/y6uYkWlB-q7myK4sPSGEiQbFaZmDBmJw_MK5a024o1i6NxHq1iUmK3Zc1iPykeBNsfOtoZza7Lknjh5h=w251-h330-rw' height = 200>  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; roi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image    
+
 
 ```python
 # load image and blurring using face detection
@@ -220,7 +231,7 @@ import numpy as np
 import cv2
 
 # face detection setup
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascade + 'haarcascade_frontalface_default.xml')
 
 # load image in grayscale mode
 image = cv2.imread('mr.bean.jpg', 0)
