@@ -45,10 +45,11 @@ ____________
 
 **Example**
 
-<img src =https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw>
+<img src = 'https://lh3.googleusercontent.com/DDaUbG9Fl6GuDVtiMuBm0Ql3xatqsAOIVhamHlanu2snEnupEp0x6OZg9_hrmMNEXAMCCw1jl23v4dE9=w506-h330-rw'>
 
-<img src = https://lh3.googleusercontent.com/7P-sDxJCbDsnPG2ntwtmAWxnkC60VYUOSndp33EV2y_5WAKw-ONJcrwBGlZT0nnyNsT7NuIyAfcx36A_=w908-h330-rw>
-### Example code:
+<img src = 'https://lh3.googleusercontent.com/7P-sDxJCbDsnPG2ntwtmAWxnkC60VYUOSndp33EV2y_5WAKw-ONJcrwBGlZT0nnyNsT7NuIyAfcx36A_=w908-h330-rw'>  
+
+### Example code:     
 ```python
 def calculate_mean(numbers):    #1
     s = sum(numbers)            #2
@@ -62,7 +63,9 @@ donations = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]
 mean_value = calculate_mean(donations)
 print('Trung bình số tiền quyên góp là: ', mean_value)
 ```
-> Trung bình số tiền quyên góp là:  477.75
+  
+
+Trung bình số tiền quyên góp là:  477.75  
 
 
 
@@ -132,7 +135,7 @@ cv2.destroyAllWindows()
 
 
 Để hiểu rõ hơn hãy nhìn gif dưới đây
-(Convolution gif)
+(Convolution gif)  
 ![](https://topdev.vn/blog/wp-content/uploads/2019/08/Convolution_schematic.gif)
 
 
